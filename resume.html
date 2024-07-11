@@ -24,12 +24,12 @@
       }
 
       /* Display our nav in BLOCK against darker background */
-      nav {
+      /* nav {
         display: block;
         background: #333;
         color: #fff;
         padding: 10px 20px;
-      }
+      } */
 
       nav a {
         color: #9dafff;
@@ -40,16 +40,35 @@
         text-decoration: underline;
       }
 
+      /* FLEXBOX */
+      /* flexboxis a one-dimensional layout method for laying out items in rows or columns */
+      /* justify-content and align-items controls how we align items along the main and cross axis */
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      nav,
+      .main-content,
+      aside {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+      }
+
+
       /* Separate the sections out visually */
       /* Start with the background color, then add margin and padding, then add a border-radius and box shadow */
-      section,
+      /* section,
       article {
         background-color: white;
         padding: 20px;
         margin: 20px 0px;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
+      } */
 
       /* Collapse our table borders */
       table {
