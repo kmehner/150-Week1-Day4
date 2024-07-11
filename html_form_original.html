@@ -1,6 +1,94 @@
 <!DOCTYPE html>
 <head>
     <title>FitLife User Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px; 
+            padding: 0;
+            background-color: #f4f4f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* CSS GRID
+        By setting the display property to grid, you are telling your browser to treat the selected 
+        element as a grid container. This means that any DIRECT child elements of this container will
+        become grid items, which can be positioned and sized within the grid.
+
+        The grid-template-columns property is used to define the columns of the grid. 
+        We use the repeat() function to create two columns with equal width.
+        The "1fr" value represents a fractional unit, which means that each column will take up an equal portion
+        of the available space. 
+        */
+        form {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; 
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* The grid-column property is used to define the starting and ending positions of an 
+        element within the grid. The span keyword is used to specify the number of columns the 
+        element should span. In this case, span 2 means that the element should occupy two 
+        columns in the grid. */
+        fieldset {
+            grid-column: span 2;
+            border: none;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            border: none;
+            color: #007bff;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"]{
+            grid-column: span 2;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3 ease;
+            margin-top: 20px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+
+    </style>
     
 </head>
 <body>
